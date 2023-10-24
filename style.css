@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: Poppins, "Courier New", Courier, monospace;
+  }
+
+h1 {
+    margin-top: 90px;
+    margin-bottom: 5px;
+    font-size: clamp(27px, 4.7vw, 39px);
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+    letter-spacing: 0.25px;
+}
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: clamp(27px, 4.7vw, 39px);
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    letter-spacing: 0.25px;
+}
+ header > P {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    letter-spacing: 0.4px;
+ }
+header, main {
+    margin: auto; 
+}
+header {
+    margin-bottom: 82px;
+    text-align: center;
+    width: 66%;
+    max-width: 600px;
+}
+.header {
+    display: flex;
+}
+.card h3, .card p {
+    margin-left: 10px;
+}
+.card p {
+    margin-bottom: 38px;
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+    letter-spacing: 0.2px;
+}
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: hsl(234, 12%, 34%);
+    letter-spacing: 0.12px;
+}
+
+.supervisor, .team-builder, .karma, .calculator {
+    width: 290px;
+    height: 190px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-bottom: 28px;
+    padding: 24px;
+    box-shadow: 0px 0px 18px hsl(229, 6%, 66%);
+    justify-content: space-evenly;
+}
+.card .img-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.supervisor {
+border-top: 4px solid hsl(180, 62%, 55%);
+
+}
+.team-builder {
+border-top: 4px solid hsl(0, 78%, 62%);
+
+}
+
+.karma {
+border-top: 4px solid hsl(34, 97%, 64%);
+
+}
+.calculator {
+border-top: 4px solid hsl(212, 86%, 64%);
+}
+@media screen and (min-width: 1310px) {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .supervisor, .team-builder, .karma, .calculator {
+        width: 350px;
+        height: 250px;
+    }
+    .outer, .inner {
+    margin: 18px;
+    }
+    .outer {
+        align-items: center;
+    }
+    .karma {
+        margin-bottom: 70px;
+    }
+}
